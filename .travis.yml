@@ -1,0 +1,8 @@
+language: c++
+
+script:
+  - curl -X POST https://cloud.docker.com/api/build/v1/source/7994f98d-f436-4bd6-a848-303d7941715b/trigger/$DOCKER_TRIGGER_KEY/call/
+  
+branches:
+  only:
+  - master
