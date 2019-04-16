@@ -9,6 +9,6 @@ RUN useradd -ms /bin/bash builder
 USER builder
 WORKDIR /src
 
-ENTRYPOINT ["node"]
+CMD ["node"]
 
 
